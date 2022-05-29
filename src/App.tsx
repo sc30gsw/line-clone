@@ -11,7 +11,7 @@ import { Line } from "./components/Line";
  */
 export const App = () => {
 	// ログインユーザーの情報を取得
-	const user = useAuthState(auth);
+	const [user] = useAuthState(auth);
 	// ユーザーが認証済みの場合、Lineコンポーネントを描画、認証済みでない場合は、SignInコンポーネントを描画
 	return <div>{user ? <Line /> : <SignIn />}</div>;
 };
