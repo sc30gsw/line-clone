@@ -1,5 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -15,3 +16,9 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// firebaseからの認証情報を取得
+export const auth = getAuth();
+auth.languageCode = "it";
+// To apply the default browser preference instead of explicitly setting it.
+// firebase.auth().useDeviceLanguage();
