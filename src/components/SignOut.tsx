@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import { FC } from "react";
 import { auth } from "../firebase";
 
 /**
@@ -6,7 +7,7 @@ import { auth } from "../firebase";
  *
  * @returns
  */
-export const SignOut = () => {
+export const SignOut: FC = () => {
 	return (
 		<div>
 			{/* ボタン押下時サインアウトする */}

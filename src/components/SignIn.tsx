@@ -1,14 +1,14 @@
 import { Button } from "@mui/material";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../firebase";
-import React from "react";
+import React, { FC } from "react";
 
 /**
  * サインインに関するコンポーネント
  *
  * @returns
  */
-export const SignIn = () => {
+export const SignIn: FC = () => {
 	/**
 	 * google認証ログインを行う関数
 	 *

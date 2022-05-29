@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { SignIn } from "./components/SignIn";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./firebase";
@@ -9,7 +9,7 @@ import { Line } from "./components/Line";
  *
  * @returns
  */
-export const App = () => {
+export const App: FC = () => {
 	// ログインユーザーの情報を取得
 	const [user] = useAuthState(auth);
 	// ユーザーが認証済みの場合、Lineコンポーネントを描画、認証済みでない場合は、SignInコンポーネントを描画
