@@ -41,7 +41,7 @@ export const Line: FC = () => {
 		<div>
 			<SignOut />
 			<div className="msgs">
-				{messages.map(({ id = uuid(), text, photoURL, uid }) => (
+				{messages.map(({ id, text, photoURL, uid }) => (
 					<div>
 						<div
 							key={id}
