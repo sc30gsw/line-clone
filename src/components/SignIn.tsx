@@ -21,8 +21,13 @@ export const SignIn: FC = () => {
 	};
 
 	return (
-		<div>
-			<Button onClick={signInWithGoogle}>グーグルでログインする</Button>
+		<div className="header">
+			<Button
+				onClick={signInWithGoogle}
+				style={{ color: "white", fontSize: "15px" }}
+			>
+				グーグルでログインする
+			</Button>
 		</div>
 	);
 };
