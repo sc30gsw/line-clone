@@ -4,7 +4,7 @@ import { auth } from "../firebase";
 import React, { FC } from "react";
 
 /**
- * サインインに関するコンポーネント
+ * サインインボタンのコンポーネント
  *
  * @returns
  */
